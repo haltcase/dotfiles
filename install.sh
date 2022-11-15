@@ -21,3 +21,6 @@ if ! [ -x "$(command -v starship)" ]; then
     ln -s "$(pwd)/starship.toml" ~/.config/starship.toml
   fi
 fi
+
+exec $SHELL
+
